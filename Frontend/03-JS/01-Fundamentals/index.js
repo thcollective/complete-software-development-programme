@@ -1,4 +1,5 @@
 /***************************** VARIABLE *****************************/
+
 // Variable Declaration
 var name;
 let age;
@@ -20,6 +21,7 @@ const registered;
 registered = false;
 
 /***************************** DATA TYPES *****************************/
+
 // String
 const name = 'Yap';
 
@@ -42,7 +44,40 @@ const grades = {
 	english: 'C',
 };
 
+/***************************** OPERATORS *****************************/
+
+// Assignment Operator
+let age = 20;
+
+age = age + 1
+age += 1 // faster and cleaner
+
+// Comparison Operator
+console.log(1 < 2)
+console.log(1 > 2)
+console.log(1 <= 1)
+console.log(2 >= 2)
+
+console.log(2 == '2') // check for value only
+console.log(2 === '2') // check for data type and value
+console.log(2 != '2')
+console.log(2 !== '2')
+
+// Logical Operator
+console.log(true && true)
+console.log(true && false)
+console.log(false && true)
+console.log(false && false)
+
+console.log(true || true)
+console.log(true || false)
+console.log(false || true)
+console.log(false || false)
+
+// check out https://www.w3schools.com/js/js_operators.asp for more
+
 /***************************** CONDITIONS *****************************/
+
 const registered = false;
 
 if (registered) {
@@ -52,6 +87,7 @@ if (registered) {
 }
 
 /***************************** LOOPS *****************************/
+
 const names = ['User A', 'User B', 'User C'];
 
 // Start at 0; Continue till the end of the array; +1 every loop
@@ -70,6 +106,7 @@ for (let position in names) {
 }
 
 /***************************** FUNCTION *****************************/
+
 // Function Declaration
 function sayHello() {
 	console.log('Hello');
