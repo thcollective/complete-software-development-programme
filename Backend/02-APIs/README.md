@@ -5,7 +5,7 @@
 | No. | Topic                                           |
 | :-: | ----------------------------------------------- |
 |  1  | [What is API?](#what-is-api)                    |
-|  2  | [Express](#express.js)                          |
+|  2  | [Express](#expressjs)                          |
 |  3  | [CORS](#cors) |
 
 # What is API?
