@@ -86,7 +86,7 @@ node index.js
 
 And your server should be up and ready to serve.
 
-Do note that when you run the command above the process is always running until you manually stop it. The server job is to run 24/7 and serve requests from the client. To stop it, hit CTRL + C.
+Do note that when you run the command above the process is always running until you manually stop it. The server job is to run 24/7 and serve requests from the client. To stop it, hit CTRL + C. Whenever you make a change to your server, you need to stop the server and run it again to reflect the changes. 
 
 Download insomnia [here](https://insomnia.rest/) and test your API.
 ![Insomnia Screenshot](./assets/insomnia-snapshot.jpeg "Insomnia Screenshot")
@@ -231,4 +231,4 @@ And there we go! We can see our todos displayed right on the screen and it's com
 
 ### Congrats! You just made a full stack application!
 
-Try taking out this line `app.use(cors(corsOptions))` from `index.js`. What do you get as a response? Open your console to find out!
+Try taking out this line `app.use(cors(corsOptions))` from `index.js`. Don't forget to restart your server. What do you get as a response? Open your console to find out!
