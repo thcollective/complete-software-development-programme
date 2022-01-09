@@ -1,1 +1,0 @@
-# Configuring Git Locally
