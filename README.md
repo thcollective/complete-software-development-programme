@@ -1,12 +1,24 @@
-# Complete Software Development Programme
+# Databases
 
-A project-based peer-to-peer education system to help you become job-ready
-software developer / tech entrepreneur!
+## Table of Contents
 
-## Roadmap
+| No. | Topic                                                             |
+| :-: | ----------------------------------------------------------------- |
+|  1  | [Intro to Databases](#intro-to-databases)                         |
+|  2  | [Types of Databases](#types-of-databases)                         |
+|  3  | [Horizontal vs Vertical Scaling](#horizontal-vs-vertical-scaling) |
+|  4  | [No SQL](#no-sql)                                                 |
+|  5  | [SQL](#sql)                                                       |
+|  6  | [Resources](#resources)                                           |
 
-| Area                   | Topic                             |
-| ---------------------- | --------------------------------- |
-| [Frontend](./Frontend) | HTML, CSS, JavaScript, VueJS      |
-| [Backend](./Backend)   | Express, Authentication, Database |
-| [DevOps](./DevOps)     | Terminal, Version Control         |
+# Intro to Databases
+
+# Types of Databases
+
+# Horizontal vs Vertical Scaling
+
+# No SQL
+
+# SQL
+
+# Resources
