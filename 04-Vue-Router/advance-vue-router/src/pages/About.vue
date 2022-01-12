@@ -1,9 +1,17 @@
 <template>
-	<h1>About Page</h1>
+	<Page>
+		<template #page-content>
+			<Button @click="$router.push('/')"> Go to Home </Button>
+		</template>
+	</Page>
 </template>
 
 <script>
+import Page from '../components/Page.vue';
+import Button from '../components/Button.vue';
+
 export default {
-	name: 'About',
+	name: 'Home',
+	components: { Page, Button },
 };
 </script>
