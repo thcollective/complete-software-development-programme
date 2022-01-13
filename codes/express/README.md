@@ -7,5 +7,5 @@ npm install
 
 ### Start the server and listen for requests
 ```
-node index.js
+nodemon index.js
 ```
