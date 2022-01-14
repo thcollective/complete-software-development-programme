@@ -4,8 +4,8 @@
 
 | No. | Topic                                                                   |
 | :-: | ----------------------------------------------------------------------- |
-|  1  | [What is API?](#what-is-api?)                                           |
-|  2  | [Why do we need API?](#why-do-we-need-api?)                             |
+|  1  | [What is API?](#what-is-api)                                            |
+|  2  | [Why do we need API?](#why-do-we-need-api)                              |
 |  3  | [HTTP Methods](#http-methods)                                           |
 |  4  | [Difference between Server and API](#difference-between-server-and-api) |
 |  5  | [Example Applicaton](#example-application)                              |
