@@ -42,7 +42,7 @@ Here is an example of a message
 }
 ```
 
-1. There should be a unique ID for each messages and the id has to be generated on th server. There shouldn't be any duplicated messages with the same ID.
+1. There should be a unique ID for each messages and the id has to be generated on the server. There shouldn't be any duplicated messages with the same ID.
 2. There should be a created at field for each messages.
 3. There should be a updated at field for each messages. When a message is updated, this field should be updated.
 
