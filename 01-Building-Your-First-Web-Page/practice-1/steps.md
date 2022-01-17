@@ -1,3 +1,8 @@
+As web designers and front-end developers, we have the luxury of attending a
+number of great conferences dedicated to our craft. We’re going to make up our
+own conference, Styles Conference, and build a website for it throughout the
+following lessons.
+
 ## Step 1
 
 Let’s open our text editor, create a new file named index.html, and save it to a
@@ -13,8 +18,8 @@ elements.
 ```html
 <!DOCTYPE html>
 <html lang="en">
-	<head></head>
-	<body></body>
+  <head></head>
+  <body></body>
 </html>
 ```
 
@@ -27,8 +32,8 @@ Conference.”
 
 ```html
 <head>
-	<meta charset="utf-8" />
-	<title>Styles Conference</title>
+  <meta charset="utf-8" />
+  <title>Styles Conference</title>
 </head>
 ```
 
@@ -41,11 +46,11 @@ introduce our conference.
 
 ```html
 <body>
-	<h1>Styles Conference</h1>
-	<p>
-		Every year the brightest web designers and front-end developers descend
-		on Chicago to discuss the latest technologies. Join us this August!
-	</p>
+  <h1>Styles Conference</h1>
+  <p>
+    Every year the brightest web designers and front-end developers descend on
+    Chicago to discuss the latest technologies. Join us this August!
+  </p>
 </body>
 ```
 
