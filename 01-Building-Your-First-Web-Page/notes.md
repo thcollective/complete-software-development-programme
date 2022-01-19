@@ -4,61 +4,32 @@
 
 | No. | Topic                                                               |
 | :-: | ------------------------------------------------------------------- |
-|  1  | [What are HTML & CSS?](#what-are-html-css)                          |
+|  1  | [What are HTML and CSS?](#what-are-html-and-css)                    |
 |  2  | [Understanding Common HTML Terms](#understanding-common-html-terms) |
 |  3  | [Understanding Common CSS Terms](#understanding-common-css-terms)   |
 |  4  | [Working with CSS Selectors](#understanding-common-css-terms)       |
 |  4  | [Referencing CSS](#referencing-css)                                 |
 
-If you can, imagine a time before the invention of the Internet. Websites didn’t
-exist, and books, printed on paper and tightly bound, were your primary source
-of information. It took a considerable amount of effort—and reading—to track
-down the exact piece of information you were after.
+## What are HTML and CSS?
 
-Today you can open a web browser, jump over to your search engine of choice, and
-search away. Any bit of imaginable information rests at your fingertips. And
-chances are someone somewhere has built a website with your exact search in
-mind.
+HTML stands for **HyperText Markup Language**, gives content structure and meaning by defining that content as, for example, headings, paragraphs, or images. CSS, or **Cascading Style Sheets**, is a presentation language created to style the appearance of content using, for example, fonts or colors.
 
-Within this book I’m going to show you how to build your own websites using the
-two most dominant computer languages—HTML and CSS.
+Putting into simpler terms, HTML represents the content/structure of your webpage, and CSS represents the appearance of it.
 
-Before we begin our journey to learn how to build websites with HTML and CSS, it
-is important to understand the differences between the two languages, the syntax
-of each language, and some common terminology.
+## Understanding Common HTML Terms
 
-## What are HTML & CSS?
-
-HTML, HyperText Markup Language, gives content structure and meaning by defining
-that content as, for example, headings, paragraphs, or images. CSS, or Cascading
-Style Sheets, is a presentation language created to style the appearance of
-content—using, for example, fonts or colors.
-
-The two languages—HTML and CSS—are independent of one another and should remain
-that way. CSS should not be written inside of an HTML document and vice versa.
-As a rule, HTML will always represent content, and CSS will always represent the
-appearance of that content.
-
-With this understanding of the difference between HTML and CSS, let’s dive into
-HTML in more detail.
-
-## Understanding HTML Terms
-
-While getting started with HTML, you will likely encounter new—and often
-strange—terms. Over time you will become more and more familiar with all of
-them, but the three common HTML terms you should begin with are elements, tags,
-and attributes.
+You will encounter many new terms as you get started and these are the three common HTML terms you should begin with - elements, tags, and attributes.
 
 ### HTML Elements
 
-Elements are designators that define the structure and content of objects within
+Elements helps define the structure and content of objects within
 a page. Some of the more frequently used elements include multiple levels of
 headings (identified as `<h1>` through `<h6>` elements) and paragraphs
 (identified as the `<p>` element); the list goes on to include the `<a>`,
 `<div>`, `<span>`, `<strong>`, and `<em>` elements, and many more.
 
 Elements are identified by the use of less-than and greater-than angle brackets,
-< >, surrounding the element name. Thus, an element will look like the
+`< >`, surrounding the element name. Thus, an element will look like the
 following:
 
 ```
@@ -67,70 +38,49 @@ following:
 
 ### HTML Tags
 
-The use of less-than and greater-than angle brackets surrounding an element
-creates what is known as a tag. Tags most commonly occur in pairs of opening and
-closing tags.
+The use of `<` and `>` angle brackets surrounding an element creates what is known as a tag. Tags most commonly occur in pairs of opening and closing tags.
 
-An opening tag marks the beginning of an element. It consists of a less-than
-sign followed by an element’s name, and then ends with a greater-than sign; for
-example, `<div>`.
+An opening tag marks the beginning of an element. For example, `<div>`.
 
-A closing tag marks the end of an element. It consists of a less-than sign
-followed by a forward slash and the element’s name, and then ends with a
-greater-than sign; for example, `</div>`.
+A closing tag marks the end of an element. It consist of a `/` before the element name inside the tag, for example, `</div>`.
 
-The content that falls between the opening and closing tags is the content of
-that element. An anchor link, for example, will have an opening tag of `<a>` and
-a closing tag of `</a>`. What falls between these two tags will be the content
-of the anchor link.
-
-So, anchor tags will look a bit like this:
+Anything falls between the two tags will be the content:
 
 ```html
-<a>...</a>
+<div>Content goes in here</div>
 ```
+
+> There are some elements that don't come in a pair of opening and closing tags, and we refer them as `self-closing tags`. Image element `<img>` is one of the example of a self-closing tag. Self-closing tags only have attributes and no content inside. We will get into more about this in the later section.
 
 ### HTML Attributes
 
 Attributes are properties used to provide additional information about an
-element. The most common attributes include the id attribute, which identifies
-an element; the class attribute, which classifies an element; the src attribute,
-which specifies a source for embeddable content; and the href attribute, which
-provides a hyperlink reference to a linked resource.
+element and are defined within the opening tag, after an element’s name.
 
-Attributes are defined within the opening tag, after an element’s name.
 Generally attributes include a name and a value. The format for these attributes
 consists of the attribute name followed by an equals sign and then a quoted
-attribute value. For example, an `<a>` element including an href attribute would
-look like the following:
+attribute value. For example, an anchor (link) `<a>` element including an href attribute would look like the following:
 
 ```html
-<a href="https://hackercollective.co/">Hacker Collective</a>
+<a href="https://hackercollective.co/">Click Me</a>
 ```
 
-The preceding code will display the text “Shay Howe” on the web page and will
-take users to https://hackercollective.co/ upon clicking the “Hacker Collective”
+The code above will display the content “Click Me” on the web page and will
+take users to `https://hackercollective.co/` upon clicking the “Click Me”
 text. The anchor element is declared with the opening `<a>` and closing `</a>`
-tags encompassing the text, and the hyperlink reference attribute and value are
-declared with href="https://hackercollective.co/" in the opening tag.
-
-Now that you know what HTML elements, tags, and attributes are, let’s take a
-look at putting together our first web page. If anything looks new here, no
-worries—we’ll decipher it as we go.
+tags encompassing the content, and the hyperlink reference attribute and value are
+declared with `href="https://hackercollective.co/"` in the opening tag.
 
 ### HTML Document
 
-HTML documents are plain text documents saved with an .html file extension
-rather than a .txt file extension. To begin writing HTML, you first need a plain
-text editor that you are comfortable using. Sadly this does not include
-Microsoft Word or Pages, as those are rich text editors. Two of the more popular
-plain text editors for writing HTML and CSS are Dreamweaver and Sublime Text.
-Free alternatives also include Notepad++ for Windows and TextWrangler for Mac.
+HTML documents are plain text documents saved with an .html file extension.
+
+> To begin writing HTML, you first need a text editor and we strongly recommend VS Code. Follow this [link](https://pathforge.co/adventures/1/Complete-Software-Development-Programme/journeys/2/quests/19) to get started (if you haven't got VS Code installed).
 
 All HTML documents have a required structure that includes the following
 declaration and elements: `<!DOCTYPE html>`, `<html>`, `<head>`, and `<body>`.
 
-The document type declaration, or `<!DOCTYPE `html>, informs web browsers which
+The document type declaration, or `<!DOCTYPE html>`, informs web browsers which
 version of HTML is being used and is placed at the very beginning of the HTML
 document. Because we’ll be using the latest version of HTML, our document type
 declaration is simply `<!DOCTYPE html>`. Following the document type
@@ -149,47 +99,26 @@ element. A breakdown of a typical HTML document structure looks like this:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Hello World</title>
-	</head>
-	<body>
-		<h1>Hello World</h1>
-		<p>This is a web page.</p>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is a web page.</p>
+  </body>
 </html>
 ```
 
-The preceding code shows the document beginning with the document type
-declaration, `<!DOCTYPE html>`, followed directly by the `<html>` element.
-Inside the `<html>` element come the `<head>` and `<body>` elements. The
-`<head>` element includes the character encoding of the page via the
-`<meta charset="utf-8">` tag and the title of the document via the `<title>`
-element. The `<body>` element includes a heading via the `<h1>` element and a
-paragraph via the `<p>` element. Because both the heading and paragraph are
-nested within the `<body>` element, they are visible on the web page.
+The code above shows the document beginning with the document type declaration `<!DOCTYPE html>`, followed directly by the `<html>` element. Inside the `<html>` element come the `<head>` and `<body>` elements. The `<head>` element includes the character encoding of the page via the `<meta charset="utf-8">` tag and the title of the document via the `<title>` element. The `<body>` element includes a heading via the `<h1>` element and a paragraph via the `<p>` element. Because both the heading and paragraph are nested within the `<body>` element, they are visible on the web page.
 
-When an element is placed inside of another element, also known as nested, it is
-a good idea to indent that element to keep the document structure well organized
-and legible. In the previous code, both the `<head>` and `<body>` elements were
-nested—and indented—inside the `<html>` element. The pattern of indenting for
-elements continues as new elements are added inside the `<head>` and `<body>`
-elements.
+When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible In the previous code, both the `<head>` and `<body>` elements were nested — and indented — inside the `<html>` element. The pattern of indenting for elements continues as new elements are added inside the `<head>` and `<body>` elements.
 
-The structure outlined here, making use of the `<!DOCTYPE html>` document type
-and `<html>`, `<head>`, and `<body>` elements, is quite common. We’ll want to
-keep this document structure handy, as we’ll be using it often as we create new
-HTML documents.
+> Install and enable `Prettier` extension in your VS code to ease your code formatting.
 
 ### HTML Self-Closing Elements
 
-In the previous example, the `<meta>` element had only one tag and didn’t
-include a closing tag. Fear not, this was intentional. Not all elements consist
-of opening and closing tags. Some elements simply receive their content or
-behavior from attributes within a single tag. The `<meta>` element is one of
-these elements. The content of the previous `<meta>` element is assigned with
-the use of the charset attribute and value. Other common self-closing elements
-include:
+If you observe from the previous code example, the `<meta>` element is a self-closing tag. Some elements simply receive their content or behavior from attributes within a single tag, and contains no content. Other common self-closing elements include:
 
 ```html
 <br />
@@ -201,28 +130,18 @@ include:
 ...
 ```
 
-As web designers and front-end developers, we have the luxury of attending a
-number of great conferences dedicated to our craft. We’re going to make up our
-own conference, Styles Conference, and build a website for it throughout the
-following lessons. Let's [practice](./practice-1/steps.md)!
+Now that you know what HTML elements, tags, attributes, and documents are, let’s take a
+look at putting together [our first web page](./practice-1/steps.md). If anything looks new here, no worries — we’ll decipher it as we go.
 
 ## Understanding Common CSS Terms
 
-In addition to HTML terms, there are a few common CSS terms you will want to
-familiarize yourself with. These terms include selectors, properties, and
-values. As with the HTML terminology, the more you work with CSS, the more these
-terms will become second nature.
+Let's start looking into a few common CSS terms you will want to familiarize yourself with. These terms include selectors, properties, and values. As with the HTML terminology, the more you work with CSS, the more these terms will become second nature.
 
 ### CSS Selectors
 
-As elements are added to a web page, they may be styled using CSS. A selector
-designates exactly which element or elements within our HTML to target and apply
-styles (such as color, size, and position) to. Selectors may include a
-combination of different qualifiers to select unique elements, all depending on
-how specific we wish to be. For example, we may want to select every paragraph
-on a page, or we may want to select only one specific paragraph on a page.
+A selector designates exactly which element or elements within our HTML to target and apply styles to.
 
-Selectors generally target an attribute value, such as an id or class value, or
+Selectors generally target an attribute value, such as an `id` or `class` value, or
 target the type of element, such as `<h1>` or `<p>`.
 
 Within CSS, selectors are followed with curly brackets, `{}`, which encompass
@@ -231,7 +150,7 @@ all `<p>` elements.
 
 ```css
 p {
-	...;
+  ...;
 }
 ```
 
@@ -246,8 +165,8 @@ defining the color and font-size properties to be applied to all `<p>` elements.
 
 ```css
 p {
-	color: ...;
-	font-size: ...;
+  color: ...;
+  font-size: ...;
 }
 ```
 
@@ -262,8 +181,8 @@ property to be `16 pixels`.'
 
 ```css
 p {
-	color: orange;
-	font-size: 16px;
+  color: orange;
+  font-size: 16px;
 }
 ```
 
@@ -293,7 +212,7 @@ the corresponding HTML it selects.
 
 ```css
 div {
-	...;
+  ...;
 }
 ```
 
@@ -323,7 +242,7 @@ elements.
 
 ```css
 .awesome {
-	...;
+  ...;
 }
 ```
 
@@ -351,7 +270,7 @@ the id attribute value of shayhowe.
 
 ```css
 #shayhowe {
-	...;
+  ...;
 }
 ```
 
@@ -381,7 +300,7 @@ references a single external style sheet.
 
 ```html
 <head>
-	<link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
 ```
 

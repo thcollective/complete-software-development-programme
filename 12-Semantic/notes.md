@@ -11,14 +11,14 @@
 
 <br /><br />
 
-# Semantic and Non-semantic Elements
+## Semantic and Non-semantic Elements
 
 Semantic HTML elements mean elements with meaning and clearly defines its
 content. Non-semantic HTML elements tell nothing about its content.
 
 <br /><br />
 
-# Semantic Element Examples
+## Semantic Element Examples
 
 `<article>` Defines independent, self-contained content<br /> `<aside>` Defines
 content aside from the page content<br /> `<details>` Defines additional details
@@ -34,22 +34,22 @@ Defines a date/time<br />
 
 <br />
 
-# Non-semantic Element Examples
+## Non-semantic Element Examples
 
 `<div>`<br /> `<span>`
 
 <br />
 
-# Why Use Semantic Elements
+## Why Use Semantic Elements
 
--   Accessibility<br/> Semantic HTML makes webpages available to mobile devices
-    as well as people with disabilities. This is due to the improved ability of
-    screen readers and browsers to interpret the code.
+- Accessibility<br/> Semantic HTML makes webpages available to mobile devices
+  as well as people with disabilities. This is due to the improved ability of
+  screen readers and browsers to interpret the code.
 
--   SEO<br/> It enhances the website. SEO, or Search Engine Optimization, is the
-    process of increasing the number of visitors to your website. With improved
-    SEO, search engines are better able to identify your website's content and
-    appropriately weight the most important content.
+- SEO<br/> It enhances the website. SEO, or Search Engine Optimization, is the
+  process of increasing the number of visitors to your website. With improved
+  SEO, search engines are better able to identify your website's content and
+  appropriately weight the most important content.
 
--   Simple to Understand<br/> Semantic HTML makes the source code of a website
-    easier to read for other web developers.
+- Simple to Understand<br/> Semantic HTML makes the source code of a website
+  easier to read for other web developers.
