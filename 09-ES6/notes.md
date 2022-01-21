@@ -14,7 +14,7 @@
 |  8  | [Array Method 2: Filter](#array-method-2-filter) |
 |  9  | [Array Method 3: Reduce](#array-method-3-reduce) |
 
-<br /><br />
+<br />
 
 # What is ES6?
 
@@ -22,6 +22,8 @@ ES6 refers to version 6 of the ECMA Script programming language. ECMA Script is
 the standardized name for JavaScript and was released in 2011. It is a major
 enhancement to the JavaScript language, and adds many more features intended to
 make large-scale software development easier.
+
+<br /><br />
 
 # Template Literals
 
@@ -63,9 +65,7 @@ var age = 20;
 <br />
 
 It's weird to still be able to get the value, when you use it before creating
-it.
-
-This is due to a concept called `hoisting`. We will cover this in a more
+it. This is due to a concept called `hoisting`. We will cover this in a more
 advanced sections.
 
 <br />
