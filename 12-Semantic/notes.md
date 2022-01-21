@@ -34,9 +34,11 @@ Defines a date/time<br />
 
 <br />
 
-## Non-semantic Element Examples
+## Non-semantic Elements
 
-`<div>`<br /> `<span>`
+`<div>` and `<span>`s are non-semantic HTML elements that act as containers
+solely for styling purposes. As generic containers, they do not come with any
+overarching meaning or semantic value.
 
 <br />
 
