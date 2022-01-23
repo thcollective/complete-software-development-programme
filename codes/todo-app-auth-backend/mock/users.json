@@ -1,0 +1,20 @@
+[
+    {
+      "name": "User A",
+      "email": "usera@gmail.com",
+      "password": "$2b$10$4gq/MfDsps0C6GQJwaHob.sIHjyikjS6Wiw9p4da/Om4dzENPPxFG",
+      "id": "1"
+    },
+    {
+      "name": "User B",
+      "email": "userb@gmail.com",
+      "password": "$2b$10$4gq/MfDsps0C6GQJwaHob.sIHjyikjS6Wiw9p4da/Om4dzENPPxFG",
+      "id": "2"
+    },
+    {
+      "name": "User C",
+      "email": "userc@gmail.com",
+      "password": "$2b$10$4gq/MfDsps0C6GQJwaHob.sIHjyikjS6Wiw9p4da/Om4dzENPPxFG",
+      "id": "3"
+    }
+  ]
