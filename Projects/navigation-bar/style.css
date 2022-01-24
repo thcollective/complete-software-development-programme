@@ -1,0 +1,85 @@
+/* Reset default styling; general utilities */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation bar styling start */
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+}
+
+ul > li {
+  padding: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+button {
+  padding: 15px;
+}
+
+button {
+  background: none;
+  color: white;
+  font-weight: 700;
+  border: 3px solid red;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(43, 43, 43);
+}
+
+/* Dropdown menu styling */
+.features {
+  position: relative;
+}
+
+.dropdown {
+  background-color: rgb(43, 43, 43);
+  border-radius: 5px;
+  position: absolute;
+  top: 38px;
+  width: 120px;
+  display: none; /* hide the menu by default */
+}
+
+.dropdown > li {
+  margin-bottom: 10px;
+}
+
+.features:hover .dropdown {
+  display: block; /* appear on hover at features class */
+}
