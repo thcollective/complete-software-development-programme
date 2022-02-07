@@ -1,4 +1,4 @@
-# F1: Capstone Project: Build A Personal Landing Page!
+# F1 Capstone Project: Build A Personal Landing Page!
 
 ## Table of Contents
 
