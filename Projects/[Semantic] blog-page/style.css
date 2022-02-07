@@ -1,67 +1,90 @@
 html {
-	max-width: 60rem;
-	padding: 3em 1em;
-	margin: auto;
-	line-height: 1.75;
-	font-size: 1.25em;
-	font-family: Arial;
+  max-width: 60rem;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+  font-family: Arial;
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul {
-	list-style-type: none;
-	display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 ul > li {
-	margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 h1 {
-	display: flex;
-	justify-content: center;
-	font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
 }
 
 img {
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 article {
-	width: 60%;
-	background-color: rgba(128, 128, 128, 0.103);
-	padding: 1rem;
-	margin-bottom: 1rem;
-	border-radius: 0.5rem;
+  width: 60%;
+  background-color: rgba(128, 128, 128, 0.103);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 
 button {
-	background-color: none;
-	border: none;
-	cursor: pointer;
-	font-weight: bold;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 button:hover {
-	color: green;
-	text-decoration: underline;
+  color: green;
+  text-decoration: underline;
 }
 
 aside {
-	width: 30%;
-	padding: 1rem;
-	float: right;
-	border-radius: 0.5rem;
-	background-color: rgba(233, 233, 233, 0.473);
+  width: 30%;
+  padding: 1rem;
+  float: right;
+  border-radius: 0.5rem;
+  background-color: rgba(233, 233, 233, 0.473);
 }
 
 footer {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* responsive design code starts here */
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  aside,
+  article {
+    width: 90%;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 0.6rem;
+  }
 }

@@ -83,3 +83,42 @@ button:hover {
 .features:hover .dropdown {
   display: block; /* appear on hover at features class */
 }
+
+/*Mobile responsive nav bar*/
+/* checkbox hack */
+input[type="checkbox"] {
+  display: none;
+}
+/*Hamburger*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  color: white;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 5rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .dropdown {
+    left: 55%;
+    top: 2rem;
+  }
+}
