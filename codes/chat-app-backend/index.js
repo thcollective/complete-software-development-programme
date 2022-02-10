@@ -11,7 +11,7 @@ Mongoose.connect(
   },
   (error, result) => {
     if (error) return;
-    console.log("Connected to the database successfully");
+    console.log("🚀 Connected to the database successfully");
   }
 );
 
