@@ -1,15 +1,60 @@
 const router = require("express").Router();
 const generateHash = require("../Helpers/hashPassword");
 const ModelUser = require("../Models/CollectionUser");
+const comparePassword = require("../Helpers/comparePassword");
+const generateToken = require("../Helpers/generateToken");
+const verifyToken = require('../Middlewares/verifyToken')
 
 // READ USERS
-router.get("/", async (req, res) => {
+router.get("/", verifyToken, async (req, res) => {
   try {
     const users = await ModelUser.find({});
     res.status(200).json(users);
   } catch (error) {
     console.log(error);
     res.status(400).json(error);
+  }
+});
+
+router.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    // Verifying required fields
+    if (!email) {
+      throw "Email is needed.";
+    }
+
+    if (!password) {
+      throw "Password is needed.";
+    }
+
+    // Find the user in the db
+    const Response = await ModelUser.findOne({ email: email });
+    if (!Response) {
+      throw "You don't have an account yet. Please register first.";
+    }
+
+    const User = Response.toJSON();
+
+    // Compare passwords
+    const Result = await comparePassword(password, User.password);
+    if (!Result) {
+      throw "Wrong password.";
+    }
+
+    // Generate JWT Token
+    const Token = await generateToken(User);
+    if (!Token) {
+      throw "Error generating token.";
+    }
+
+    res.status(200).json({
+      jwt: Token,
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(400).json(err);
   }
 });
 
@@ -30,9 +75,8 @@ router.post("/", async (req, res) => {
       throw "Password is needed.";
     }
 
+    const hashedPassword = await generateHash(password);
 
-    const hashedPassword = await generateHash(password)
-    
     const user = new ModelUser({
       name: name,
       username: username,
