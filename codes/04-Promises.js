@@ -1,22 +1,19 @@
 function getTodos() {
-  return new Promise((ok, error) => {
+  return new Promise((resolve, reject) => {
     let todos = ["Todo 1", "Todo 2", "Todo 3", "hello"];
-    if (todos.length === 4) {
-      ok(todos);
-    } else {
-      error();
-    }
+    if (todos.length !== 4) reject(new Error("Error getting todos"));
+    resolve(todos);
   });
 }
 
 function processTodos(todos) {
   return new Promise((resolve, reject) => {
     let badWords = ["hello"];
-    for (let i = 0; i < todos.length; i++) {
-      if (badWords.includes(todos[i])) {
+    todos.forEach(function (todo, i) {
+      if (badWords.includes(todo)) {
         todos.splice(i, 1);
       }
-    }
+    });
     resolve(todos);
   });
 }
@@ -26,12 +23,14 @@ function showTodos(todos) {
 }
 
 // Promise hell (Promises after promises)
-getTodos()
-  .then((todos) => {
-    processTodos(todos).then((filteredTodos) => {
-      showTodos(filteredTodos);
-    });
+const start = () => {
+  getTodos()
+  .then(todos => {
+    processTodos(todos)
+    .then((todos) => {
+      showTodos(todos)
+    })
   })
-  .catch(() => {
-    console.log("Error");
-  });
+};
+
+start()

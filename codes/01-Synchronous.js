@@ -1,18 +1,13 @@
-console.log("Start");
-function getUser() {
-  let i = 0;
-  while (i < 1000000000) {
-    i++;
-  }
-
-  const data = {
-    name: "User 1",
-    id: 1,
-  };
-
-  return data;
+// Sleep function
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
 }
 
-const user = getUser();
-console.log(user);
+console.log("Start");
+sleep(1000)
+console.log("Done");
 console.log("End");

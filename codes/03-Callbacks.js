@@ -4,10 +4,6 @@
 3 - Display todos 
 */
 function getTodos(callback) {
-  let i = 0;
-  while (i < 1000000000) {
-    i++;
-  }
   let todos = ["Todo 1", "Todo 2", "Todo 3", "hello"];
   callback(todos);
 }
